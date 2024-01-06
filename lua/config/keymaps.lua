@@ -34,13 +34,13 @@ function VisualSelectionSearchReplace()
 end
 keymaps("x", "<leader>r", ":lua VisualSelectionSearchReplace()<CR>", opt)
 
-keymaps("n", "<M-Up>", ":normal! 10k<CR>", opt)
-keymaps("i", "<M-Up>", "<Esc>:normal! 10k<CR>a", opt)
-keymaps("x", "<M-Up>", "10k", opt)
+keymaps("n", "<C-Up>", ":normal! 10k<CR>", opt)
+keymaps("i", "<C-Up>", "<Esc>:normal! 10k<CR>a", opt)
+keymaps("x", "<C-Up>", "10k", opt)
 
-keymaps("n", "<M-Down>", ":normal! 10j<CR>", opt)
-keymaps("i", "<M-Down>", "<Esc>:normal! 10j<CR>a", opt)
-keymaps("x", "<M-Down>", "10j", opt)
+keymaps("n", "<C-Down>", ":normal! 10j<CR>", opt)
+keymaps("i", "<C-Down>", "<Esc>:normal! 10j<CR>a", opt)
+keymaps("x", "<C-Down>", "10j", opt)
 
 keymaps("n", "<S-Up>", "10<C-y>", opt)
 keymaps("i", "<S-Up>", "<Esc>10<C-y><CR>a", opt)
