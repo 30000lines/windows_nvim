@@ -49,3 +49,5 @@ keymaps("i", "<S-Down>", "<Esc>10<C-e><CR>a", opt)
 
 keymaps("n", "<leader>md", ":delmarks!<CR>", opt)
 
+keymaps("n", "<C-a>", "gg0vG$", opt)
+
