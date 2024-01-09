@@ -46,3 +46,6 @@ keymaps("n", "<S-Up>", "10<C-y>", opt)
 keymaps("i", "<S-Up>", "<Esc>10<C-y><CR>a", opt)
 keymaps("n", "<S-Down>", "10<C-e>", opt)
 keymaps("i", "<S-Down>", "<Esc>10<C-e><CR>a", opt)
+
+keymaps("n", "<leader>md", ":delmarks!<CR>", opt)
+
