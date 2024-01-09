@@ -24,6 +24,13 @@ return {
     opts = {
         require("telescope").setup({
             pickers = {
+                find_files = {
+                    theme = "ivy",
+                    layout_config = {
+                        height = 0.7,
+                    },
+                    path_display = {"tail"}
+                },
                 live_grep = {
                     theme = "ivy",
                     layout_config = {
