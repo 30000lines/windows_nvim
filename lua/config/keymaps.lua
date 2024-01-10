@@ -51,3 +51,13 @@ keymaps("n", "<leader>md", ":delmarks!<CR>", opt)
 
 keymaps("n", "<C-a>", "gg0vG$", opt)
 
+-- 定义 JumpToLine 函数
+function JumpToLine()
+  local line = vim.fn.input('Go to line: ')
+  -- 如果输入不为空，并且是数字，则跳转到指定行
+  if line ~= '' and tonumber(line) then
+    vim.api.nvim_win_set_cursor(0, { tonumber(line), 0 })
+  end
+end
+
+keymaps("n", "<C-g>", ":lua JumpToLine()<CR>", opt)
